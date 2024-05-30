@@ -1,8 +1,9 @@
 import '../../assets/styles/login.css';  // Asegúrate de que el nombre del archivo sea correcto
 
 // Login.js
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import {URL_GLOBAL} from '../../constant';
 import axios from 'axios';
 
 export const Login = () => {
@@ -10,12 +11,14 @@ export const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
+  const URL = URL_GLOBAL
+  
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
     try {
-      const response = await axios.post('http://localhost:3002/api/login', { email, password });
+      const response = await axios.post(`${URL}login`, { email, password });
       const { token } = response.data;
 
       localStorage.setItem('token', token);

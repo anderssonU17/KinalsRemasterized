@@ -4,7 +4,7 @@ import axios from "axios";
 import Swal from "sweetalert2";
 import {URL_GLOBAL} from '../../constant';
 
- const URL = URL_GLOBAL; // 
+ const URL = URL_GLOBAL; // Se utiliza el URLGlobal para solo cambiarlo en solo un lugar
 
 // const URL = "https://kinals-corner-humbertolopez2020327.vercel.app/api/";
 // apiLogin.js

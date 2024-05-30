@@ -2,7 +2,8 @@ import { useEffect, useState } from 'react'
 import axios from 'axios';
 import '../styles/UserStyle.css'
 
-const URL = 'http://localhost:3002/api/';
+import {URL_GLOBAL} from '../../constant';
+const URL = URL_GLOBAL
 
 export const UserView = () => {
   const [login, setLogin] = useState([]);

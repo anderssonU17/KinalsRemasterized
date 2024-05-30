@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { URL_GLOBAL } from "../../constant";
 import { getFile } from "../../firebase/config";
 

@@ -1,4 +1,3 @@
-import React from 'react'
 import logo from '../../assets/image/LogoHd.png'; // Reemplaza con la ruta de tu logo
 import microsoftLogo from '../../assets/image/microsoft.png'; // Reemplaza con la ruta del logo de Microsoft
 import { useNavigate } from 'react-router-dom';
@@ -33,7 +32,7 @@ export const HomePage = () => {
             <h1 className="main-title">
               El rincón de <br /> Confianza de Kinal
             </h1>
-            <p className="sub-title">Únete a Kinals'Corner</p>
+            <p className="sub-title">Únete a Kinals Corner</p>
     
             <button className="microsoft-btn"
             >
@@ -45,7 +44,7 @@ export const HomePage = () => {
               <span>o</span>
             </div>
     
-            <button className="create-account-btn"n onClick={onRegister}>Crear Cuenta</button>
+            <button className="create-account-btn" onClick={onRegister}>Crear Cuenta</button>
     
             <p className="terms-policy">
               Al registrarte, estás de acuerdo con <br/>nuestras políticas y términos.

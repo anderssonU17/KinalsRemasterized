@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Teacher } from "../components/Teacher";
 import { getTeachers } from "../api/teachers";
 import { AddTeacher } from "../components/AddTeacher";
