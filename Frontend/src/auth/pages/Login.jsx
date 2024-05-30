@@ -1,18 +1,16 @@
-import '../../assets/styles/login.css';  // Asegúrate de que el nombre del archivo sea correcto
-
 // Login.js
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import {URL_GLOBAL} from '../../constant';
 import axios from 'axios';
+import { URL_GLOBAL } from '../../constant';
+import '../../assets/styles/login.css'; // Asegúrate de que el nombre del archivo sea correcto
 
 export const Login = () => {
   const navigate = useNavigate();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
-  const URL = URL_GLOBAL
-  
+  const URL = URL_GLOBAL;
 
   const handleSubmit = async (e) => {
     e.preventDefault();
