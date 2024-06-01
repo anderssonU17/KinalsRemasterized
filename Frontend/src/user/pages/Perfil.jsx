@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react'
 import '../styles/UserStyle.css'
-import jwt_decode from 'jwt-decode'
 
 
 export const Perfil = () => {
@@ -8,17 +7,7 @@ export const Perfil = () => {
   const [user, setUser] = useState({});
 
 
-  useEffect(() => {
-    const retrievedToken = localStorage.getItem('token');
-    setToken(retrievedToken);
-
     // Decodificar el token para obtener los datos del usuario
-    if (retrievedToken) {
-      const decodedToken = jwt_decode(retrievedToken);
-      setUser(decodedToken);
-      console.log(decodedToken)
-    }
-  }, []);
 
 
 

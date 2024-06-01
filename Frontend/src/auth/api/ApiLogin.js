@@ -6,7 +6,7 @@ import {URL_GLOBAL} from '../../constant';
 
  const URL = URL_GLOBAL; // Se utiliza el URLGlobal para solo cambiarlo en solo un lugar
 
-// const URL = "https://kinals-corner-humbertolopez2020327.vercel.app/api/";
+// const URL = "https://kinals-corner-humbertolopez2020327.vercel.app/api/"; talveeesz
 // apiLogin.js
 export const fetchLogin = async (email, password) => {
   try {
