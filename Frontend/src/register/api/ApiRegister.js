@@ -1,6 +1,7 @@
 import axios from "axios"; {/*se agrego api para poder crear usuario */ }
 import Swal from 'sweetalert2';
-const URL = "http://localhost:3002/api/" 
+import {URL_GLOBAL} from '../../constant';
+const URL = URL_GLOBAL 
 //const URL = "https://kinals-corner-humbertolopez2020327.vercel.app/api/"
 
 export const createUser = async (name, email, password) => {

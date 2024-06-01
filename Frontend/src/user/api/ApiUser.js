@@ -1,8 +1,8 @@
 import axios from 'axios';
 import { useState } from 'react';
 import Swal from 'sweetalert2';
-
- const URL = 'http://localhost:3002/api/'; 
+import {URL_GLOBAL} from '../../constant';
+ const URL = URL_GLOBAL; 
 //const URL = "https://kinals-corner-humbertolopez2020327.vercel.app/api/"
 
 

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState} from 'react';
 import { Publicacion } from './Publicacion';
 import '../../assets/styles/Foro.css';
 import { createForum } from '../api/ApiForo';

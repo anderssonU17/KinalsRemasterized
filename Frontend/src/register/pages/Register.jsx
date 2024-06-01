@@ -30,7 +30,9 @@ export const Register = () => {
       newErrors.email = "Por favor, ingresa tu correo";
     } else if (
       !email.endsWith("@kinal.edu.gt") &&
-      !email.endsWith("@kinal.org.gt")
+      !email.endsWith("@kinal.org.gt")&&
+      !email.endsWith("@miumg.edu.gt")&&
+      !email.endsWith("@miumg.org.gt")
     ) {
       [
         /*en caso de que el correo no sea de kinal mostrara error antes de enviar el post */

@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFire } from "@fortawesome/free-solid-svg-icons";
 import '../../assets/styles/Publicacion.css'
 import { readForum, updateForumLikes } from "../api/ApiForo";
 
-export const Publicacion = ({ tasks }) => {
+export const Publicacion = (tasks) => {
     const [publicacion, setPublicacion] = useState([]);
 
     const handleLikeClick = async (index) => {

@@ -1,7 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import axios from 'axios';
 import logo from "../../assets/image/ayudaSocial.png";
 import '../../assets/styles/helpSocial.css';
+import {URL_GLOBAL} from '../../constant';
+const URL = URL_GLOBAL
 
 function SocialHelpsByUser() {
   const [socialHelps, setSocialHelps] = useState([]);
@@ -12,7 +14,7 @@ function SocialHelpsByUser() {
   const getSocialHelpsByUser = async () => {
     try {
       const token = localStorage.getItem('token');
-      const response = await axios.get('http://localhost:3002/api/listUserHelp', {
+      const response = await axios.get(`${URL}listUserHelp`, {
         headers: { 'token': token }
       });
 
@@ -33,7 +35,7 @@ function SocialHelpsByUser() {
     try {
       const token = localStorage.getItem('token');
       await axios.patch(
-        'http://localhost:3002/api/update-helpSocial',
+        `${URL}update-helpSocial`,
         {
           id: claimingHelpId,
           claimantName

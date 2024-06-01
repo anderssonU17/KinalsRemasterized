@@ -1,8 +1,7 @@
-import React, { useState } from 'react'
+import  { useState } from 'react'
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import Swal from 'sweetalert2';
-import { createTeacher } from '../../teachers/api/teachers';
 import { createHelpSocial, getHelpSocials } from '../api/helpSocials';
 
 export const AddHelpSocial = (props) => {

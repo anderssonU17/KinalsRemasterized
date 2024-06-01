@@ -1,8 +1,7 @@
-import React, { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBell, faUser, faSignInAlt, faUserPlus } from '@fortawesome/free-solid-svg-icons';
+import { faBell, faUser } from '@fortawesome/free-solid-svg-icons';
 import { isUserAuthenticated } from '../auth/helpers/LoginHelper';
-import { Perfil } from '../user/pages/Perfil';
 import '../assets/styles/navbar.css';
 import logo from '../assets/image/LogoHd.png';
 import { Link } from 'react-router-dom';
@@ -53,7 +52,7 @@ export const Navbar = () => {
       <div className="container">
         <Link to="/" className="navbar-brand" href="/">
           <img src={logo} alt="Logo" className="logo" />
-          <span className="brand-name">Kinals'Corner</span>
+          <span className="brand-name">Kinals R</span>
         </Link>
 
         <button
@@ -87,7 +86,7 @@ export const Navbar = () => {
               // Mostrar elementos del Navbar si el usuario está autenticado
               <>
                 <li className="nav-item">
-                  <Link to="/teachers" className="nav-link" href="/maestros">
+                  <Link to="/teachers" className="nav-link" href="/teachers">
                     Maestros
                   </Link>
                 </li>
