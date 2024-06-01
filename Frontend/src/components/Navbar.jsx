@@ -86,7 +86,7 @@ export const Navbar = () => {
               // Mostrar elementos del Navbar si el usuario está autenticado
               <>
                 <li className="nav-item">
-                  <Link to="/teachers" className="nav-link" href="/maestros">
+                  <Link to="/teachers" className="nav-link" href="/teachers">
                     Maestros
                   </Link>
                 </li>

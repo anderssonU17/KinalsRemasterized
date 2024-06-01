@@ -1,12 +1,10 @@
 // Login.js
 import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import { URL_GLOBAL } from '../../constant';
 import '../../assets/styles/login.css'; // Asegúrate de que el nombre del archivo sea correcto
 
 export const Login = () => {
-  const navigate = useNavigate();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
@@ -24,7 +22,8 @@ export const Login = () => {
       setError('');
       console.log('Usuario autenticado correctamente');
 
-      navigate('/listUserHelp');
+      // Redirigir a /foro y recargar la página
+      window.location.href = '/foro';
     } catch (error) {
       console.error(error);
       setError('Credenciales inválidas');
